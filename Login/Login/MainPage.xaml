@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="Login.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Login.Views"
+    BackgroundColor="White"
+    NavigationPage.HasBackButton="False"
+    NavigationPage.HasNavigationBar="False">
+    <NavigationPage Title="Home" IconImageSource="HomeMenuIcon">
+        <x:Arguments>
+            <ContentPage Title="Home">
+                <NavigationPage.TitleView>
+                    <Grid RowDefinitions="100" RowSpacing="10">
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            Text="Home" />
+                    </Grid>
+                </NavigationPage.TitleView>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Discovery" IconImageSource="LocationMenuIcon">
+        <x:Arguments>
+            <views:HomePage BackgroundColor="LightGray">
+                <NavigationPage.TitleView>
+                    <Grid RowDefinitions="100" RowSpacing="10">
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            Text="Discovery" />
+                    </Grid>
+                </NavigationPage.TitleView>
+            </views:HomePage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Bookmark" IconImageSource="StoreMenuIcon">
+        <x:Arguments>
+            <ContentPage Title="Bookmark">
+                <NavigationPage.TitleView>
+                    <Grid RowDefinitions="100" RowSpacing="10">
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            Text="Bookmark" />
+                    </Grid>
+                </NavigationPage.TitleView>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Top Results" IconImageSource="MusicMenuIcon">
+        <x:Arguments>
+            <ContentPage Title="Top Results">
+                <NavigationPage.TitleView>
+                    <Grid RowDefinitions="100" RowSpacing="10">
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            Text="Top Results" />
+                    </Grid>
+                </NavigationPage.TitleView>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Profile" IconImageSource="UserMenuIcon">
+        <x:Arguments>
+            <ContentPage Title="Profile">
+                <NavigationPage.TitleView>
+                    <Grid RowDefinitions="100" RowSpacing="10">
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            Text="Profile" />
+                    </Grid>
+                </NavigationPage.TitleView>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+
+
+
+
+
+</TabbedPage>

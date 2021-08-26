@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Login.Views.HomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Login.Controls"
+    Title="Discovery">
+    <NavigationPage.TitleView>
+        <Grid RowDefinitions="100" RowSpacing="10">
+            <Label
+                Grid.Row="0"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Home" />
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="15" BackgroundColor="LightGray">
+                <controls:MenuView
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    MenuDescription="Places 10"
+                    MenuIconSource="HomeMenuIcon"
+                    MenuTitle="Bar &amp; Hotels" />
+                <controls:MenuView
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    MenuDescription="Places 32"
+                    MenuIconSource="MusicMenuIcon"
+                    MenuTitle="Fine Dining" />
+                <controls:MenuView
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    MenuDescription="Places 20"
+                    MenuIconSource="FoodMenuIcon"
+                    MenuTitle="Cafes" />
+                <controls:MenuView
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    MenuDescription="Places 14"
+                    MenuIconSource="LocationMenuIcon"
+                    MenuTitle="Nearby" />
+                <controls:MenuView
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    MenuDescription="Places 46"
+                    MenuIconSource="FastMenuIcon"
+                    MenuTitle="Fast Foods" />
+                <controls:MenuView
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    MenuDescription="Places 39"
+                    MenuIconSource="StoreMenuIcon"
+                    MenuTitle="Featured Foods" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

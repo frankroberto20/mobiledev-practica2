@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="Login.Controls.MenuView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="this">
+    <ContentView.Content>
+        <Frame
+            Margin="5"
+            Padding="10"
+            BindingContext="{x:Reference this}">
+            <Grid RowDefinitions="*,Auto,50" RowSpacing="10">
+                <Image
+                    Grid.Row="0"
+                    HorizontalOptions="Center"
+                    Scale="3"
+                    Margin="0,10,0,0"
+                    HeightRequest="70"
+                    Source="{Binding MenuIconSource}" />
+                <Label
+                    Grid.Row="1"
+                    Margin="0"
+                    Padding="0"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    Text="{Binding MenuTitle}"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="2"
+                    Margin="0"
+                    Padding="0"
+                    FontSize="Small"
+                    HorizontalOptions="Center"
+                    Text="{Binding MenuDescription}" />
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

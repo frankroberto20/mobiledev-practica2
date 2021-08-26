@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Login.Views.SignUpPage"
+    Title="SignUp"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image
+                HorizontalOptions="Center"
+                Scale="0.6"
+                WidthRequest="200"
+                HeightRequest="200"
+                Source="HospiCloudIcon.png"
+                VerticalOptions="Center" />
+            <Entry
+                x:Name="fullnameEntry"
+                BackgroundColor="#E1E6F0"
+                HorizontalOptions="CenterAndExpand"
+                Placeholder="Full name"
+                PlaceholderColor="Gray"
+                TextColor="Black"
+                WidthRequest="250" />
+            <Entry
+                x:Name="usernameEntry"
+                BackgroundColor="#E1E6F0"
+                HorizontalOptions="CenterAndExpand"
+                Placeholder="User"
+                PlaceholderColor="Gray"
+                TextColor="Black"
+                WidthRequest="250" />
+            <Entry
+                x:Name="passwordEntry"
+                BackgroundColor="#E1E6F0"
+                HorizontalOptions="CenterAndExpand"
+                IsPassword="True"
+                Placeholder="Password"
+                PlaceholderColor="Gray"
+                TextColor="Black"
+                WidthRequest="250" />
+            <Entry
+                x:Name="confirmPasswordEntry"
+                BackgroundColor="#E1E6F0"
+                HorizontalOptions="CenterAndExpand"
+                IsPassword="True"
+                Placeholder="Confirm Password"
+                PlaceholderColor="Gray"
+                TextColor="Black"
+                WidthRequest="250" />
+            <Button
+                Margin="0,50,0,0"
+                BackgroundColor="#00C2CB"
+                CornerRadius="20"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                Text="Login"
+                TextColor="White"
+                WidthRequest="200" 
+                Command="{Binding SignUpCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
