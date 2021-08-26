@@ -15,7 +15,6 @@ namespace Login.Views
         public HomePage()
         {
             InitializeComponent();
-            BindingContext = new HomeViewModel();
         }
     }
 }

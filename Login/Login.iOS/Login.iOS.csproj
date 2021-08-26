@@ -203,6 +203,10 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserMenuIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\UserMenuIcon.imageset\UserIconMenu.png" />
+    <ImageAsset Include="Assets.xcassets\UserMenuIcon.imageset\UserIconMenu-1.png" />
+    <ImageAsset Include="Assets.xcassets\UserMenuIcon.imageset\UserIconMenu-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -219,8 +223,11 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Login\Login.csproj">
-      <Project>{96563BDC-2DA5-40E0-B5B1-FFBA74D662F6}</Project>
+      <Project>{E6A393C2-9319-4E54-A719-CC0B1289A950}</Project>
       <Name>Login</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\UserMenuIcon.imageset\" />
   </ItemGroup>
 </Project>
