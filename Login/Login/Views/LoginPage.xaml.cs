@@ -15,7 +15,6 @@ namespace Login.Views
         public LoginPage()
         {
             InitializeComponent();
-            BindingContext = new LoginViewModel();
         }
     }
 }

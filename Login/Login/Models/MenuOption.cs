@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Login.Models
 {
-    class MenuOption
+    public class MenuOption
     {
         public string Title {get;set;}
         public string Description {get;set;}

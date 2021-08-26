@@ -3,7 +3,11 @@
     x:Class="Login.Views.SignUpPage"
     Title="SignUp"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:Login.ViewModels">
+    <ContentPage.BindingContext>
+        <models:SignUpViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
             <Image
@@ -19,6 +23,7 @@
                 HorizontalOptions="CenterAndExpand"
                 Placeholder="Full name"
                 PlaceholderColor="Gray"
+                Text="{Binding User.FullName}"
                 TextColor="Black"
                 WidthRequest="250" />
             <Entry
@@ -27,6 +32,7 @@
                 HorizontalOptions="CenterAndExpand"
                 Placeholder="User"
                 PlaceholderColor="Gray"
+                Text="{Binding User.Username}"
                 TextColor="Black"
                 WidthRequest="250" />
             <Entry
@@ -36,6 +42,7 @@
                 IsPassword="True"
                 Placeholder="Password"
                 PlaceholderColor="Gray"
+                Text="{Binding User.Password}"
                 TextColor="Black"
                 WidthRequest="250" />
             <Entry
@@ -45,6 +52,7 @@
                 IsPassword="True"
                 Placeholder="Confirm Password"
                 PlaceholderColor="Gray"
+                Text="{Binding User.PasswordConfirm}"
                 TextColor="Black"
                 WidthRequest="250" />
             <Button

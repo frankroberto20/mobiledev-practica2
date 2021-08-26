@@ -16,7 +16,7 @@
                     Scale="3"
                     Margin="0,10,0,0"
                     HeightRequest="70"
-                    Source="{Binding MenuIconSource}" />
+                    Source="{Binding MenuOption.ImageSource}" />
                 <Label
                     Grid.Row="1"
                     Margin="0"
@@ -24,7 +24,7 @@
                     FontAttributes="Bold"
                     FontSize="Medium"
                     HorizontalOptions="Center"
-                    Text="{Binding MenuTitle}"
+                    Text="{Binding MenuOption.Title}"
                     TextColor="Black"
                     VerticalOptions="Center" />
                 <Label
@@ -33,7 +33,7 @@
                     Padding="0"
                     FontSize="Small"
                     HorizontalOptions="Center"
-                    Text="{Binding MenuDescription}" />
+                    Text="{Binding MenuOption.Description}" />
             </Grid>
         </Frame>
     </ContentView.Content>

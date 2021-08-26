@@ -1,4 +1,5 @@
-﻿using Login.Views;
+﻿using Login.Models;
+using Login.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,20 +12,19 @@ namespace Login.ViewModels
     class LoginViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public UserOption User { get; set; } = new UserOption();
         public ICommand LoginCommand { private set; get; }
-        public ICommand SignUpNavigateCommand {private set; get; }
+        public ICommand SignUpNavigateCommand { private set; get; }
 
         public async void OnLogin()
         {
-            if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
+            if (string.IsNullOrEmpty(User.Username) || string.IsNullOrEmpty(User.Password))
             {
                 await App.Current.MainPage.DisplayAlert("Error", "User and Password fields can't be empty", "OK");
             }
             else
             {
-                await App.Current.MainPage.DisplayAlert("Welcome!", $"Hello {Username}", "OK");
+                await App.Current.MainPage.DisplayAlert("Welcome!", $"Hello {User.Username}", "OK");
                 await App.Current.MainPage.Navigation.PushAsync(new MainPage());
             }
         }
